@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Bibliografie</title>
-  <meta name="description" content="Bibliografie" />
+  <title>5 Guerrilla framework | Bibliografie</title>
+  <meta name="description" content="5 Guerrilla framework | Bibliografie" />
   <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Bibliografie" />
+  <meta property="og:title" content="5 Guerrilla framework | Bibliografie" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Bibliografie" />
+  <meta name="twitter:title" content="5 Guerrilla framework | Bibliografie" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="cv-wouter-verra.html"/>
+<link rel="prev" href="transparantie-peer-review.html"/>
+<link rel="next" href="dosis-response-analyse.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -190,14 +190,84 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Bibliografie</h1>
-<p class="author"><em>Wouter</em></p>
-<p class="date"><em>2023-06-30</em></p>
-</div>
-<div id="portfolio" class="section level1 hasAnchor" number="1">
-<h1><span class="header-section-number">1</span> Portfolio<a href="index.html#portfolio" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Hallo! ik ben Wouter Verra, een student biologisch en medisch laboratorium onderzoek met een minor in bioinformatica. Deze site bevat mijn cv en een aantal voorbeelden van wat ik kan qua coderen. Als er verdere vragen zijn, stuur een mail naar: -</p>
+<div id="guerrilla-framework" class="section level1 hasAnchor" number="5">
+<h1><span class="header-section-number">5</span> Guerrilla framework<a href="guerrilla-framework.html#guerrilla-framework" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Het guerrilla framework, <span class="citation">Ridge (2015)</span> is een manier om data consequent een locatie te geven in een file structure. Het heeft 7 principes, de eerste is: ruimte is goedkoop maar verwarring is duur. Dit houdt in dat het prima is om extra ruimte te gebruiken om bijvoorbeeld readmes toe te voegen omdat het veel sneller werkt. De volgende is: gebruik simpele visuele project structuren. De volgende is automatiseer zo veel mogelijk met code zodat het snel reproduceerbaar is. Verbind data in de analyse omgeving met de werk omgeving. Gebruik version control software zoals git/github. Maak duidelijke afspraken binnen het team over bijvoorbeeld de manier waarop bestanden genoemd worden of wat het principe van de bestanden structuur is. Gebruik code die van begin tot einde loopt dus waar niet nog halverwege handmatig iets aan aangepast hoeft te worden.</p>
+<p>Om hier een voorbeeld van te geven is hieronder de folder structuur van een voorgaande cursus gegeven:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="guerrilla-framework.html#cb3-1" aria-hidden="true" tabindex="-1"></a>fs<span class="sc">::</span><span class="fu">dir_tree</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">&quot;assignment_2&quot;</span>, <span class="st">&quot;daur2wouter&quot;</span>))</span></code></pre></div>
+<pre><code>## C:/Users/Gebruiker/Documents/hu/datascience/dsfb2/Portfolio/assignment_2/daur2wouter
+## +-- assignment_2.html
+## +-- assignment_2.Rmd
+## +-- citations2.bib
+## +-- metagenomics
+## |   +-- data
+## |   |   +-- bracken
+## |   |   |   +-- mock1.bracken
+## |   |   |   \-- README
+## |   |   +-- fastqcMG
+## |   |   |   +-- HU1_MOCK1_L001_R1_001_fastqc
+## |   |   |   |   +-- fastqc.fo
+## |   |   |   |   +-- fastqc_data.txt
+## |   |   |   |   +-- fastqc_report.html
+## |   |   |   |   +-- Icons
+## |   |   |   |   |   +-- error.png
+## |   |   |   |   |   +-- fastqc_icon.png
+## |   |   |   |   |   +-- tick.png
+## |   |   |   |   |   \-- warning.png
+## |   |   |   |   +-- Images
+## |   |   |   |   |   +-- adapter_content.png
+## |   |   |   |   |   +-- duplication_levels.png
+## |   |   |   |   |   +-- per_base_n_content.png
+## |   |   |   |   |   +-- per_base_quality1.png
+## |   |   |   |   |   +-- per_base_sequence_content.png
+## |   |   |   |   |   +-- per_sequence_gc_content.png
+## |   |   |   |   |   +-- per_sequence_quality.png
+## |   |   |   |   |   +-- per_tile_quality.png
+## |   |   |   |   |   \-- sequence_length_distribution.png
+## |   |   |   |   \-- summary.txt
+## |   |   |   +-- HU1_MOCK1_L001_R1_001_fastqc.html
+## |   |   |   +-- HU1_MOCK1_L001_R1_001_fastqc.zip
+## |   |   |   +-- HU1_MOCK1_L001_R2_001_fastqc
+## |   |   |   |   +-- fastqc.fo
+## |   |   |   |   +-- fastqc_data.txt
+## |   |   |   |   +-- fastqc_report.html
+## |   |   |   |   +-- Icons
+## |   |   |   |   |   +-- error.png
+## |   |   |   |   |   +-- fastqc_icon.png
+## |   |   |   |   |   +-- tick.png
+## |   |   |   |   |   \-- warning.png
+## |   |   |   |   +-- Images
+## |   |   |   |   |   +-- adapter_content.png
+## |   |   |   |   |   +-- duplication_levels.png
+## |   |   |   |   |   +-- per_base_n_content.png
+## |   |   |   |   |   +-- per_base_quality2.png
+## |   |   |   |   |   +-- per_base_sequence_content.png
+## |   |   |   |   |   +-- per_sequence_gc_content.png
+## |   |   |   |   |   +-- per_sequence_quality.png
+## |   |   |   |   |   +-- per_tile_quality.png
+## |   |   |   |   |   \-- sequence_length_distribution.png
+## |   |   |   |   \-- summary.txt
+## |   |   |   +-- HU1_MOCK1_L001_R2_001_fastqc.html
+## |   |   |   +-- HU1_MOCK1_L001_R2_001_fastqc.zip
+## |   |   |   \-- README
+## |   |   +-- kraken2
+## |   |   |   +-- mock1
+## |   |   |   |   +-- mock1.report
+## |   |   |   |   +-- mock1_bracken_species.biom
+## |   |   |   |   \-- mock1_bracken_species.report
+## |   |   |   \-- README
+## |   |   +-- per_base_quality1.png
+## |   |   +-- per_base_quality2.png
+## |   |   +-- README
+## |   |   \-- setup_meta_env.yml
+## |   +-- formatieveMetagenomics.html
+## |   +-- formatieveMetagenomics.Rmd
+## |   \-- README
+## +-- README
+## \-- RNAseq
+##     +-- formatieveRNAseq.html
+##     +-- formatieveRNAseq.Rmd
+##     \-- README</code></pre>
 
 </div>
             </section>
@@ -205,8 +275,8 @@ div.csl-indent {
           </div>
         </div>
       </div>
-
-<a href="cv-wouter-verra.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="transparantie-peer-review.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="dosis-response-analyse.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

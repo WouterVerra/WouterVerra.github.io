@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Bibliografie</title>
-  <meta name="description" content="Bibliografie" />
+  <title>3 Project Noldus | Bibliografie</title>
+  <meta name="description" content="3 Project Noldus | Bibliografie" />
   <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Bibliografie" />
+  <meta property="og:title" content="3 Project Noldus | Bibliografie" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Bibliografie" />
+  <meta name="twitter:title" content="3 Project Noldus | Bibliografie" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="cv-wouter-verra.html"/>
+<link rel="prev" href="cv-wouter-verra.html"/>
+<link rel="next" href="transparantie-peer-review.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -190,14 +190,24 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Bibliografie</h1>
-<p class="author"><em>Wouter</em></p>
-<p class="date"><em>2023-06-30</em></p>
-</div>
-<div id="portfolio" class="section level1 hasAnchor" number="1">
-<h1><span class="header-section-number">1</span> Portfolio<a href="index.html#portfolio" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Hallo! ik ben Wouter Verra, een student biologisch en medisch laboratorium onderzoek met een minor in bioinformatica. Deze site bevat mijn cv en een aantal voorbeelden van wat ik kan qua coderen. Als er verdere vragen zijn, stuur een mail naar: -</p>
+<div id="project-noldus" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">3</span> Project Noldus<a href="project-noldus.html#project-noldus" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Samen met twee anderen heb ik een project uitgevoerd voor het bedrijf Noldus <span class="citation"><span>“About <span>Noldus</span> - <span>Innovative</span> Solutions <span></span> <span>Noldus</span>”</span> (n.d.)</span>. Dit is een bedrijf dat zich specialiseert in het maken van producten voor gedragsonderzoek. Een paar voorbeelden hiervan zijn de UltraVox XT <span class="citation"><span>“Rodent Ultrasonic Vocalizations <span></span> <span>UltraVox</span> <span>XT</span>”</span> (n.d.)</span> welke de geluiden die knaagdieren maken analyseert, FaceReader <span class="citation"><span>“Facial Expression Recognition Software <span></span> <span>FaceReader</span>”</span> (n.d.)</span> welke menselijke gezichtsuitdrukkingen analyseert en de Erasmus ladder <span class="citation"><span>“Motor Performance and Motor Learning <span></span> <span>ErasmusLadder</span>”</span> (n.d.)</span>. De laatste was de focus van dit onderzoek. De Erasmus ladder bestaat uit twee hokken met een horizontale ladder er tussen. De muizen worden overgehaald uit het hokje te gaan door een luchtstroom en lichtjes waarna het leerd dat als het naar de overkant loopt de wind en lichtjes stoppen, het wil dus zo snel mogelijk naar de overkant. De tred waarmee de muis loopt zegt iets over hoe goed de motor functie is van de muis en daarmee kan gekwantificeerd worden hoe erg de muis is beinvloed door de experimentele conditie <span class="citation"><span>“Motor <span>Function</span> &amp; <span>Gait</span> <span>Analysis</span> <span>Mouse</span> <span>Models</span>”</span> (n.d.)</span>.</p>
+<p>De ladder heeft treden waar een knop onder zit waardoor er gemeten kan worden wat voor soort stap er gezet is en voor hoe lang. Er zijn 4 soorten stappen die gezet kunnen worden, namelijk: korte stap, lange stap, sprong en terug stap en deze informatie wordt allemaal per experiment opgeslagen inclusief de volgorde van de soort stappen per muis. Dit wordt opgeslagen in een grote Excel file met nog veel meer variabelen en metadata per muis zoals leeftijd en sekse. Deze data wordt ingeladen in R, waarna er veel verschillende grafieken mee gemaakt konden worden.</p>
+<p>Noldus wou graag hun data visualisatie verbeteren, dit werd toen der tijd gedaan met een wat verouderde app waar weinig in aangepast kon worden. De vraag was of wij hier een applicatie voor konden maken welke interactief is. Dit is gedaan door eerst een aantal grafieken en tabellen te maken in aparte R scripts <span class="citation"><span>“How to <span>Detect</span> <span>Colors</span> in <span>OpenCV</span> [<span>Python</span>]”</span> (n.d.)</span>. Dit zijn uiteindelijk 11 verschillende tabellen en grafieken geworden welke allemaal naar een ander onderdeel van de data kijken of het op een andere manier visualiseren. Deze scripts zijn hierna aangeroepen in een Shiny app. Shiny <span class="citation"><span>“Shiny”</span> (n.d.)</span> is een open source R package waarmee een applicatie gemaakt kan worden welke redelijk eenvoudig online gedeeld kan worden. De applicatie is te vinden op: <span class="citation"><span>“Noldus V1.0”</span> (n.d.)</span></p>
+<p>Hieronder geef ik een aantal screenshots van de werking van de Noldus applicatie:</p>
+<p>Als eerste kan de gewenste data ingeladen worden.</p>
+<p><img src="C:/Users/Gebruiker/Documents/hu/datascience/dsfb2/Portfolio/assignment_5/Knipsel1.JPG" /></p>
+<p>Daarna is er een tab met algemene data, hieronder valt een tabel met wat metadata, een bargraph met de verdeling van mannelijke en vrouwelijke muizen in het experiment en een tabel met missende data.</p>
+<p><img src="C:/Users/Gebruiker/Documents/hu/datascience/dsfb2/Portfolio/assignment_5/Knipsel2.JPG" /></p>
+<p>Vervolgens is er een tab met een interactieve grafiek met verschillende tijd gerelateerde grafieken per trial en een violin plot van de tijd per trial tussen de controle groep en de mutant, deze grafieken zijn interactief doordat de spreiding van de sessies zelf gekozen kan worden waardoor bijvoorbeeld alleen naar sessie 5-7 gekeken kan worden en doordat de tijd gerelateerde grafiek variabele gekozen kan worden.</p>
+<p><img src="C:/Users/Gebruiker/Documents/hu/datascience/dsfb2/Portfolio/assignment_5/Knipsel3.JPG" /></p>
+<p>De volgende tab bevat een interactieve grafiek die de gemiddelde hoeveelheid percentage van de stap typen kan laten zien met dezelfde soort sessie spreiding als de vorige grafiek.</p>
+<p><img src="C:/Users/Gebruiker/Documents/hu/datascience/dsfb2/Portfolio/assignment_5/Knipsel4.JPG" /></p>
+<p>Daarna is er een staaf diagram die het verschil tussen de controle groep en de mutant kan laten zien in de hoeveelheid percentage van de stappen per staptype en nogmaals de sessie spreiding.</p>
+<p><img src="C:/Users/Gebruiker/Documents/hu/datascience/dsfb2/Portfolio/assignment_5/Knipsel5.JPG" /></p>
+<p>Als laatste is er een grafiek die de hoeveelheid percentage stappen visualiseerd als een viool grafiek met als interactie de keuze van staptype en de spreiding van de sessies.</p>
+<p><img src="C:/Users/Gebruiker/Documents/hu/datascience/dsfb2/Portfolio/assignment_5/Knipsel6.JPG" /></p>
 
 </div>
             </section>
@@ -205,8 +215,8 @@ div.csl-indent {
           </div>
         </div>
       </div>
-
-<a href="cv-wouter-verra.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="cv-wouter-verra.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="transparantie-peer-review.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
